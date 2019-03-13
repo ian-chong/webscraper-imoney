@@ -14,5 +14,5 @@ for card in cards:
     new_data = {"bank name": bank_name, "interest rate": interest_rate, "repayment": repayment, "apply_link":apply_link}
     data_list.append(new_data)
 
-print(data_list)
+
 

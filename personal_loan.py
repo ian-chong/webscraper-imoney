@@ -14,9 +14,10 @@ for card in cards:
     apply_link = card.find('a').get('href')
     new_data = {"bank name": bank_name, "interest rate": interest_rate, "repayment": repayment, "apply link":apply_link}
     data_list.append(new_data)
-with open ('home_loan.csv','w') as file:
+with open ('personal_loan.csv','w') as file:
     writer = csv.DictWriter(file, fieldnames = ["bank name", "interest rate", "repayment", "apply link"], delimiter = ';')
     writer.writeheader()
     for row in data_list:
         writer.writerow(row)
 
+print(data_list)
